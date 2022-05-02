@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF654">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SỬA NHÂN VIÊN"
+        android:textColor="#4A5CFC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/view"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="365dp"
+        android:layout_height="582dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_chonHinhSua"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#C4C4C4"
+        android:text="CHỌN HÌNH"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/img_suaNv" />
+
+    <Button
+        android:id="@+id/btn_chupHinhSua"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#C4C4C4"
+        android:text="CHỤP HÌNH"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chonHinhSua" />
+
+    <EditText
+        android:id="@+id/txt_tenNvSua"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint=" "
+        android:inputType="textPersonName"
+        android:textColor="#4A5CFC"
+        android:textColorHint="#4A5CFC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chupHinhSua" />
+
+    <EditText
+        android:id="@+id/txt_tuoiNvSua"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint=" "
+        android:inputType="textPersonName"
+        android:textColorHint="#4A5CFC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tenNvSua" />
+
+    <Button
+        android:id="@+id/btn_luuNvSua"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C4C4C4"
+        android:text="LƯU"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tuoiNvSua" />
+
+    <Button
+        android:id="@+id/btn_huyNvSua"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#C4C4C4"
+        android:text="HỦY"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_luuNvSua"
+        app:layout_constraintEnd_toStartOf="@+id/btn_luuNvSua"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tuoiNvSua"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/img_suaNv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/addnv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
